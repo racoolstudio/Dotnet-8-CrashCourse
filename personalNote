@@ -89,3 +89,8 @@ class /model :
         public decimal Price { get; set; }
         public string VideoCard { get; set; } = "";
     } 
+    adding package :
+    dot net add package <package name>
+
+    using dapper for dataconnection:
+        packages : dapper,microsoft.sql.clent, microsoft.entityframeworkcore, microsoft.entityframeworkcore.sqlserer,  
