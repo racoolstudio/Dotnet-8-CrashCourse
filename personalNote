@@ -1,0 +1,91 @@
+Creating dotnet app using cli:
+dotnet new <TemplateType>
+Template Types :
+    console
+    webapi
+Flags:
+    -n <App Name> or – name <App Name> : Name space and directory
+    -o <Output directory>
+    -lang <Language> or –language “<language>”  can work with multiple languages 
+
+
+dotnet  watch  run - re run the app with changes
+dotnet run 
+
+Console.WriteLine() - print to console
+
+Variables :
+    - Numeric 
+    - String
+    - Boolean
+    - list
+    - Lookup/Dictisonary
+Operators:
+    - Arithmetic : +, -, *, /, %
+    - Comparison: ==, !=, >, <, >=, <=,&&,||
+
+powershell :
+    code . - open visual studio code
+
+To add nuget source so we can install nuget package online :
+     dotnet nuget list source - shows the list of sources
+     dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org 
+string operation:
+    .Split(",")
+    .ToLower()
+    .ToUpper()
+
+buildlt in comparision : 
+    Equal like myString.Equal(mystring1)
+    .Sum()
+
+conditional statement :
+ if(){} 
+ else if() {} 
+ else {}
+
+switch statement : when we have a constant values to compare with a Varaible
+
+    switch(variable){
+        case("a"):
+             // do something
+             break;
+        
+        case("b"):
+            // do something
+            break;
+     
+    }
+datetime datatype:
+    DateTime startTime= DateTime.Now;
+
+loop:
+    for(int i =0; i<variable.Length;i++){}
+    foreach(int var in variable){}
+    int variable =9;
+    while(variable>0){}
+
+    do{
+     // do something 
+    }while(condition);
+     
+list and Array lengths :
+        list - Count
+        array - Length
+methods :
+     private/public void/ any datatype (anydata type param){
+        // do something 
+        return / return datatype value ;
+     };
+     You can see that methods end with ";" but not functions like conditional statement and loops apart from do while loop
+class /model :
+        public class Computer
+    {
+        public string Motherboard { get; set; } = "";
+        public int CPUCores { get; set; }
+        public bool HasWifi { get; set; }
+        public bool HasLTE { get; set; }
+        public DateTime ReleaseDate { get; set; }
+        public decimal Price { get; set; }
+        public string VideoCard { get; set; } = "";
+    } 

@@ -1,0 +1,15 @@
+C:\Users\Ridwan\Documents\GitHub\Dotnet-8-CrashCourse\firstApp\HelloWorld\bin\Debug\net8.0\HelloWorld.exe
+C:\Users\Ridwan\Documents\GitHub\Dotnet-8-CrashCourse\firstApp\HelloWorld\bin\Debug\net8.0\HelloWorld.deps.json
+C:\Users\Ridwan\Documents\GitHub\Dotnet-8-CrashCourse\firstApp\HelloWorld\bin\Debug\net8.0\HelloWorld.runtimeconfig.json
+C:\Users\Ridwan\Documents\GitHub\Dotnet-8-CrashCourse\firstApp\HelloWorld\bin\Debug\net8.0\HelloWorld.dll
+C:\Users\Ridwan\Documents\GitHub\Dotnet-8-CrashCourse\firstApp\HelloWorld\bin\Debug\net8.0\HelloWorld.pdb
+C:\Users\Ridwan\Documents\GitHub\Dotnet-8-CrashCourse\firstApp\HelloWorld\obj\Debug\net8.0\HelloWorld.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ridwan\Documents\GitHub\Dotnet-8-CrashCourse\firstApp\HelloWorld\obj\Debug\net8.0\HelloWorld.AssemblyInfoInputs.cache
+C:\Users\Ridwan\Documents\GitHub\Dotnet-8-CrashCourse\firstApp\HelloWorld\obj\Debug\net8.0\HelloWorld.AssemblyInfo.cs
+C:\Users\Ridwan\Documents\GitHub\Dotnet-8-CrashCourse\firstApp\HelloWorld\obj\Debug\net8.0\HelloWorld.csproj.CoreCompileInputs.cache
+C:\Users\Ridwan\Documents\GitHub\Dotnet-8-CrashCourse\firstApp\HelloWorld\obj\Debug\net8.0\HelloWorld.sourcelink.json
+C:\Users\Ridwan\Documents\GitHub\Dotnet-8-CrashCourse\firstApp\HelloWorld\obj\Debug\net8.0\HelloWorld.dll
+C:\Users\Ridwan\Documents\GitHub\Dotnet-8-CrashCourse\firstApp\HelloWorld\obj\Debug\net8.0\refint\HelloWorld.dll
+C:\Users\Ridwan\Documents\GitHub\Dotnet-8-CrashCourse\firstApp\HelloWorld\obj\Debug\net8.0\HelloWorld.pdb
+C:\Users\Ridwan\Documents\GitHub\Dotnet-8-CrashCourse\firstApp\HelloWorld\obj\Debug\net8.0\HelloWorld.genruntimeconfig.cache
+C:\Users\Ridwan\Documents\GitHub\Dotnet-8-CrashCourse\firstApp\HelloWorld\obj\Debug\net8.0\ref\HelloWorld.dll
