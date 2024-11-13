@@ -94,3 +94,21 @@ class /model :
 
     using dapper for dataconnection:
         packages : dapper,microsoft.sql.clent, microsoft.entityframeworkcore, microsoft.entityframeworkcore.sqlserer,  
+        // Windows
+        connection string : 'Server=localhost;Database=dbName; TrustServerCertificate=true;Trusted_Connection=true"
+        // Linux
+        connection string : 'Server=localhost;Database=dbName; TrustServerCertificate=true;Trusted_Connection=false;User Id = sa;Password="pass"
+        // using connection string  (Connection Object)
+        IDbConnetion connectionName = new SqlConnection();
+
+        string query ="SELECT GETDATE()"
+
+Getting result of Query :
+
+        IEnumerable<Computer> results = dbConnection.Query<Computer>(getData);
+
+
+        foreach(Computer result in results){
+            Console.WriteLine("Computer Id : "+ result.ComputerId+" Os: "+result.Os);
+        }
+

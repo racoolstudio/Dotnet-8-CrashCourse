@@ -1,8 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.ComponentModel;
+using System.Data;
 using System.Reflection.Metadata;
+using Dapper;
 using HelloWorld.models;
-
+using Microsoft.Data.SqlClient;
+using Microsoft.IdentityModel.Tokens;
+using HelloWorld.data;
 Console.WriteLine("Hello, World!");
 Console.Write("NO new space lol");
 
@@ -181,3 +185,40 @@ string test = "bbs sbs";
 Computer linux = new Computer(){};
 linux.MemorySpace = 4.5m;
 linux.Os = "Linux";
+linux.ComputerId =102;
+linux.CPUCores=3;
+linux.HasWifi=true;
+linux.ReleaseDate= DateTime.Now;
+
+DataQuery dataQuery = new DataQuery(){};
+
+
+string query = "Select GETDATE()";
+
+Console.WriteLine("The current time is "+dataQuery.QuerySingleData<string>(query));
+
+string add = @"
+Insert into TutorialAppSchema.Computer(      
+        Os,
+        CPUCores,
+        ReleaseDate,
+        HasWifi,
+        MemorySpace 
+
+) Values(
+    '"+linux.Os+"','"+linux.CPUCores+"','"+ linux.ReleaseDate+"','"+linux.HasWifi+"','"+linux.MemorySpace+"')";
+
+dataQuery.ExecSql(add);
+
+string getData="Select * From TutorialAppSchema.Computer";
+
+// Get the data from Database -- Default
+
+IEnumerable <Computer> results = dataQuery.QueryData<Computer>(getData);
+
+
+foreach(Computer result in results){
+    Console.WriteLine("Computer Id : "+ result.ComputerId+" Os: "+result.Os);
+}
+
+
