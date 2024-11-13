@@ -216,6 +216,7 @@ string getData="Select * From TutorialAppSchema.Computer";
 
 IEnumerable <Computer> results = dataQuery.QueryData<Computer>(getData);
 
+// List<Computer> resultLists = dbConnection.Query<Computer>(getData).ToList();
 
 foreach(Computer result in results){
     Console.WriteLine("Computer Id : "+ result.ComputerId+" Os : "+result.Os);
