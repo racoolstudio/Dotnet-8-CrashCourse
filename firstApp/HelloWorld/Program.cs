@@ -218,7 +218,7 @@ IEnumerable <Computer> results = dataQuery.QueryData<Computer>(getData);
 
 
 foreach(Computer result in results){
-    Console.WriteLine("Computer Id : "+ result.ComputerId+" Os: "+result.Os);
+    Console.WriteLine("Computer Id : "+ result.ComputerId+" Os : "+result.Os);
 }
 
 
