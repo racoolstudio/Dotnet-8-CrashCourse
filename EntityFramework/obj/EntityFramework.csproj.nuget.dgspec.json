@@ -45,6 +45,22 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.json": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "NewtonSoft.json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "microsoft.data.sqlclient": {
               "target": "Package",
               "version": "[5.2.2, )"

@@ -112,3 +112,132 @@ Getting result of Query :
             Console.WriteLine("Computer Id : "+ result.ComputerId+" Os: "+result.Os);
         }
 
+
+
+Setting up config file : 
+     - create a json file 
+     - add to your project file :
+     <ItemGroup>
+      ... 
+            <None Update="appsettings.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+            </None>
+      ...
+     </ItemGroup>       
+    - get the following packages :
+           - Microsoft.Extensions.Configuration
+           - Microsoft.Extensions.Configuration.json
+
+    - my content json :
+             {
+                "dbConnectionString": {
+                    "DefaultConnection" : "Server=localhost;Database=DotNetCourseDatabase;TrustServerCertificate=true;Trusted_Connection=true"
+                }
+            }
+
+    - initailise my config build : 
+            IConfiguration configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
+
+    - value : 
+            configuration.GetSection("dbConnectionString:DefaultConnection").Value;
+            // better 
+            configuration["dbConnectionString:DefaultConnection"]
+
+
+READ AND WRITE IN FILES
+
+Write in files :    
+        File.WriteAllText("name.txt","whatever you want to say") :: It overrides everytime you run it
+        using StreamWriter file = new ("file name",append:true);
+        file.WriteLine("Whatever you want");
+        file.Close();
+
+Read files :
+        File.ReadAllText("test.txt")
+
+Serilization which is converting models to json :
+        - You can use Newtonsoft.Json or System.Text.Json;
+        - Convert your model lists to IEnumerable then  JsonSerializer.Serialize(your IEnumerable model name); (using System.Text.Json)
+        
+Deserilization convert Json to model:
+            (using System.Text.Json)
+        -   IEnumerable<Computer> d = JsonSerializer.Deserialize<IEnumerable <Computer>>(serialise);
+            foreach(Computer c in d){
+                Console.WriteLine(c.Os);
+            }
+            
+Having input with ' (single quote) replace it with two simple code '' 
+
+Mapping Filds (AutoMapper) for manipluation of fields and mapping of fields :
+// Auto Mapping 
+string snake_data = File.ReadAllText("snake_case.json");
+// Create a new class with the same fields or members in the json file 
+Mapper mapper = new Mapper(new MapperConfiguration((mapperConfig)=>{
+    mapperConfig.CreateMap<ComputerSnake,Computer>()
+    .ForMember(dest=>dest.ComputerId,options=>
+        options.MapFrom(src=>src.computer_id))
+    .ForMember(dest=>dest.Os,options=>
+        options.MapFrom(src=>src.os))
+    .ForMember(dest=>dest.CPUCores,options=>
+        options.MapFrom(src=>src.cpu_cores))
+    .ForMember(dest=>dest.ReleaseDate,options=>
+        options.MapFrom(src=>src.release_date))
+    .ForMember(dest=>dest.HasWifi,options=>
+        options.MapFrom(src=>src.has_wifi))
+    .ForMember(dest=>dest.MemorySpace,options=>
+    //manipluation
+        options.MapFrom(src=>src.memory_space*0.1m));
+
+}  ));
+ComputerDataBase  NewData = new ComputerDataBase(configuration){};
+
+IEnumerable<ComputerSnake> computerSnake = JsonConvert.DeserializeObject<IEnumerable<ComputerSnake>>(snake_data);
+IEnumerable<Computer> convertedComputer = mapper.Map<IEnumerable<Computer>>(computerSnake);
+foreach(Computer c in convertedComputer){
+        NewData.Add(c);
+}
+NewData.SaveChanges();
+
+// If you just want to Map fields and not Manipulate 
+
+
+Just add JsonProperty("name of the field in json you want to map")
+But you are going to be using System.Text.Json
+
+e.g : 
+    in computer class :
+        using System.Text.Json.Serialization;
+
+        namespace EntityFramework.models{
+            public class Computer{
+                [JsonPropertyName("computer_id")]
+                public int ComputerId {get;set;}
+                [JsonPropertyName("os")]
+                public string Os{get;set;}= "";
+                [JsonPropertyName("cpu_cores")]
+
+                public int CPUCores {get;set;}
+                [JsonPropertyName("release_date")]
+                public DateTime ReleaseDate {get;set;}
+                [JsonPropertyName("has_wifi")]
+
+                public bool HasWifi {get;set;}
+                [JsonPropertyName("memory_space")]
+                public decimal MemorySpace {get;set;}
+
+
+            }
+        }
+
+    main:
+            ComputerDataBase  NewData = new ComputerDataBase(configuration){};
+
+            IEnumerable<Computer> computerConverted = JsonSerializer.Deserialize<IEnumerable<Computer>>(snake_data);
+            
+            foreach(Computer c in computerConverted){
+                    NewData.Add(c);
+            }
+            
+            NewData.SaveChanges();
+            
+            

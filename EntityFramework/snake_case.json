@@ -1,0 +1,298 @@
+[
+    {
+      "computer_id": 1,
+      "os": "Linux",
+      "cpu_cores": 3,
+      "release_date": "2024-11-12T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 2,
+      "os": "Linux",
+      "cpu_cores": 3,
+      "release_date": "2024-11-13T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 3,
+      "os": "Linux",
+      "cpu_cores": 3,
+      "release_date": "2024-11-13T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 4,
+      "os": "Linux",
+      "cpu_cores": 3,
+      "release_date": "2024-11-13T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 5,
+      "os": "Linux",
+      "cpu_cores": 3,
+      "release_date": "2024-11-13T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 6,
+      "os": "Linux",
+      "cpu_cores": 3,
+      "release_date": "2024-11-13T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 7,
+      "os": "Linux",
+      "cpu_cores": 3,
+      "release_date": "2024-11-13T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 8,
+      "os": "Linux",
+      "cpu_cores": 3,
+      "release_date": "2024-11-13T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 9,
+      "os": "Linux",
+      "cpu_cores": 3,
+      "release_date": "2024-11-13T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 10,
+      "os": "Linux",
+      "cpu_cores": 3,
+      "release_date": "2024-11-13T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 11,
+      "os": "Linux",
+      "cpu_cores": 3,
+      "release_date": "2024-11-13T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 12,
+      "os": "Linux",
+      "cpu_cores": 3,
+      "release_date": "2024-11-13T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 13,
+      "os": "Linux",
+      "cpu_cores": 3,
+      "release_date": "2024-11-13T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 14,
+      "os": "Linux",
+      "cpu_cores": 3,
+      "release_date": "2024-11-13T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 15,
+      "os": "Linux",
+      "cpu_cores": 3,
+      "release_date": "2024-11-13T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 16,
+      "os": "Linux",
+      "cpu_cores": 3,
+      "release_date": "2024-11-13T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 17,
+      "os": "Windows",
+      "cpu_cores": 3,
+      "release_date": "2024-11-13T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 18,
+      "os": "Windows",
+      "cpu_cores": 3,
+      "release_date": "2024-11-13T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 19,
+      "os": "Windows",
+      "cpu_cores": 3,
+      "release_date": "2024-11-13T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 20,
+      "os": "Windows",
+      "cpu_cores": 3,
+      "release_date": "2024-11-13T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 21,
+      "os": "Windows",
+      "cpu_cores": 3,
+      "release_date": "2024-11-13T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 22,
+      "os": "Windows",
+      "cpu_cores": 3,
+      "release_date": "2024-11-14T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 23,
+      "os": "Windows",
+      "cpu_cores": 3,
+      "release_date": "2024-11-14T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 24,
+      "os": "Windows",
+      "cpu_cores": 3,
+      "release_date": "2024-11-14T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 25,
+      "os": "Windows",
+      "cpu_cores": 3,
+      "release_date": "2024-11-14T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 26,
+      "os": "Windows",
+      "cpu_cores": 3,
+      "release_date": "2024-11-14T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 27,
+      "os": "Windows",
+      "cpu_cores": 3,
+      "release_date": "2024-11-14T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 28,
+      "os": "Windows",
+      "cpu_cores": 3,
+      "release_date": "2024-11-14T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 29,
+      "os": "Windows",
+      "cpu_cores": 3,
+      "release_date": "2024-11-14T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 30,
+      "os": "Windows",
+      "cpu_cores": 3,
+      "release_date": "2024-11-14T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 31,
+      "os": "Windows",
+      "cpu_cores": 3,
+      "release_date": "2024-11-14T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 32,
+      "os": "Windows",
+      "cpu_cores": 3,
+      "release_date": "2024-11-14T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 33,
+      "os": "Windows",
+      "cpu_cores": 3,
+      "release_date": "2024-11-14T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 34,
+      "os": "Windows",
+      "cpu_cores": 3,
+      "release_date": "2024-11-14T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 35,
+      "os": "Windows",
+      "cpu_cores": 3,
+      "release_date": "2024-11-14T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 36,
+      "os": "Windows",
+      "cpu_cores": 3,
+      "release_date": "2024-11-15T00:00:00",
+      "has_wifi": true,
+      "memory_space": 4.5
+    },
+    {
+      "computer_id": 37,
+      "os": "Windows",
+      "cpu_cores": 3,
+      "release_date": "2024-11-15T10:20:10.9335366-03:30",
+      "has_wifi": true,
+      "memory_space": 4.5
+    }
+  ]

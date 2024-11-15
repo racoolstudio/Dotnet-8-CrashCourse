@@ -8,8 +8,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
     <PackageReference Include="microsoft.data.sqlclient" Version="5.2.2" />
     <PackageReference Include="microsoft.entityframeworkcore.sqlserver" Version="9.0.0" />
+    <!-- Copies the appsettings.json to the output directory since json pacakge checks that location -->
+    <None Update="appsettings.json">
+    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.json" Version="9.0.0" />
+    <PackageReference Include="NewtonSoft.json" Version="13.0.3" />
   </ItemGroup>
 
 </Project>
