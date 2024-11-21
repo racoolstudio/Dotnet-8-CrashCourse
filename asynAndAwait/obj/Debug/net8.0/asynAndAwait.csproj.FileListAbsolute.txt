@@ -1,0 +1,15 @@
+C:\Users\Ridwan\Documents\GitHub\Dotnet-8-CrashCourse\asynAndAwait\obj\Debug\net8.0\asynAndAwait.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ridwan\Documents\GitHub\Dotnet-8-CrashCourse\asynAndAwait\obj\Debug\net8.0\asynAndAwait.AssemblyInfoInputs.cache
+C:\Users\Ridwan\Documents\GitHub\Dotnet-8-CrashCourse\asynAndAwait\obj\Debug\net8.0\asynAndAwait.AssemblyInfo.cs
+C:\Users\Ridwan\Documents\GitHub\Dotnet-8-CrashCourse\asynAndAwait\obj\Debug\net8.0\asynAndAwait.csproj.CoreCompileInputs.cache
+C:\Users\Ridwan\Documents\GitHub\Dotnet-8-CrashCourse\asynAndAwait\obj\Debug\net8.0\asynAndAwait.sourcelink.json
+C:\Users\Ridwan\Documents\GitHub\Dotnet-8-CrashCourse\asynAndAwait\bin\Debug\net8.0\asynAndAwait.exe
+C:\Users\Ridwan\Documents\GitHub\Dotnet-8-CrashCourse\asynAndAwait\bin\Debug\net8.0\asynAndAwait.deps.json
+C:\Users\Ridwan\Documents\GitHub\Dotnet-8-CrashCourse\asynAndAwait\bin\Debug\net8.0\asynAndAwait.runtimeconfig.json
+C:\Users\Ridwan\Documents\GitHub\Dotnet-8-CrashCourse\asynAndAwait\bin\Debug\net8.0\asynAndAwait.dll
+C:\Users\Ridwan\Documents\GitHub\Dotnet-8-CrashCourse\asynAndAwait\bin\Debug\net8.0\asynAndAwait.pdb
+C:\Users\Ridwan\Documents\GitHub\Dotnet-8-CrashCourse\asynAndAwait\obj\Debug\net8.0\asynAndAwait.dll
+C:\Users\Ridwan\Documents\GitHub\Dotnet-8-CrashCourse\asynAndAwait\obj\Debug\net8.0\refint\asynAndAwait.dll
+C:\Users\Ridwan\Documents\GitHub\Dotnet-8-CrashCourse\asynAndAwait\obj\Debug\net8.0\asynAndAwait.pdb
+C:\Users\Ridwan\Documents\GitHub\Dotnet-8-CrashCourse\asynAndAwait\obj\Debug\net8.0\asynAndAwait.genruntimeconfig.cache
+C:\Users\Ridwan\Documents\GitHub\Dotnet-8-CrashCourse\asynAndAwait\obj\Debug\net8.0\ref\asynAndAwait.dll

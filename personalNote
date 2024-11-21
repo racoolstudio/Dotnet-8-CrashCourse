@@ -4,9 +4,9 @@ Template Types :
     console
     webapi
 Flags:
-    -n <App Name> or – name <App Name> : Name space and directory
+    -n <App Name> or –- name <App Name> : Name space and directory
     -o <Output directory>
-    -lang <Language> or –language “<language>”  can work with multiple languages 
+    -lang <Language> or -–language “<language>”  can work with multiple languages 
 
 
 dotnet  watch  run - re run the app with changes
@@ -241,3 +241,47 @@ e.g :
             NewData.SaveChanges();
             
             
+Synchronous and Asynchronous :
+Synchronous: single thread step by step (orderly)
+Asynchronous: Different threads with Different tasks not orderly 
+        - Tasks (Different thread for a task (anonymous function))
+        - Async methods (returns Task)
+Tasks : 
+        if you are in a class that is static void change it to "static asyn Task "
+        then 
+        TaskName.Start();
+        await TaskName;
+async Method : 
+    // the await function is just saying wait for the task before killing the program 
+    // The Synchronus function causes delay as it has to be excuted before other task under the Sync methods
+    // The asyn is basically used for running multiple tasks  
+      Task task1 = new Task(
+            ()=>{
+                Thread.Sleep(100);
+                Console.WriteLine("Executing Task 1");
+            }
+        );
+        task1.Start();
+        Console.WriteLine("Doing Task2 while runing Task 1 ");
+        await task1;
+        Task task4 = ConsoleDelayAsync("Task 4",10);
+        Console.WriteLine("After Task 1 is Run");
+        Task task3 = ConsoleDelayAsync("Task 3",50);
+        await task3;
+        ConsoleDelay("Delay",100);
+        await task4;
+
+
+
+
+        static void ConsoleDelay(string task, int delay){
+            Thread.Sleep(delay);
+            Console.WriteLine(task);
+        }
+
+        static async Task ConsoleDelayAsync(string task, int delay){
+            Task.Delay(delay);
+            Console.WriteLine(task);
+        } 
+    
+
