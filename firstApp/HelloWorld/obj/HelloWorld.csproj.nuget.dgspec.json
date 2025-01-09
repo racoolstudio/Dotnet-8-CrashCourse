@@ -22,7 +22,12 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gander.dev.townsuite.com/nuget/OSS_Nuget_Replication/v3/index.json": {},
+          "https://gander.dev.townsuite.com/nuget/Procom/v3/index.json": {},
+          "https://gander.dev.townsuite.com/nuget/Telerik_Nuget_Replication/v3/index.json": {},
+          "https://gander.dev.townsuite.com/nuget/TownSuite_Nuget/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {

@@ -285,3 +285,31 @@ async Method :
         } 
     
 
+SQL :
+    - When you want to insert primary key with Identity Feature Identity(starting,increament) ::: Set IDENTITY_INSERT TABLENAME ON / OFF 
+    - Insert into tablename ( name1, name2) Values ('name1','name2'); 
+    - Update tabename set name='value' where condition
+    - Delete from tablename where condition 
+    - Table1 Join Table2 on Table1.field1 = Table2.field2
+    - primary key (creates the cluster index )
+    - clustered index is used to make joining faster as it stored the columns in a more efficient way 
+        : create clustered index cix_Tablename_field ON TableName(fieldName)
+        // Filter Unclustered index (gets the data faster for non primary keys)
+        : create unclustered index fix_Tablename_Used ON TableName(Used)
+           induce ([field1],[field2]) -- Also include primary keys 
+           where Used = 1 
+    - ISNULL(field,"Replace null")
+    - in a Group By function operation apart from sum and count you can use STRING_AGG (feild,",") : output will be like:
+        Group 1 :: 3,2,4
+    - to join another group query use Outer Apply
+    - comparing null with null is going to be false 
+    - GETDATE() : current DateTime
+    - DATEADD(Month/Year/Minute,number, GetDate())
+    - DATEDIFF(Month/Year/Minute,number, GetDate())
+    - adding a feild for a Table we use the Alter table function
+            : ALter Table TutorialAppSchema.Users ADD NameofFeild Data Type()
+
+
+API (Swager):
+    add the package which is : dotnet add package  Swashbuckle
+    

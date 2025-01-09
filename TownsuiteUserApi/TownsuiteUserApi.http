@@ -1,0 +1,6 @@
+@TownsuiteUserApi_HostAddress = http://localhost:5034
+
+GET {{TownsuiteUserApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
